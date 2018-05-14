@@ -1,0 +1,44 @@
+{
+  "name": "niuko-filterStudents",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": "git@github.com:albertobisello/niuko-filterStudents.git",
+  "scripts": {
+    "start": "webpack-dev-server --profile --progress --colors --config ./webpack.config.dev.js",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test:watch": "npm run test -- --watch"
+  },
+  "author": "alberto.bisello@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "chai": "^3.5.0",
+    "chai-jquery": "^2.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "jquery": "^3.3.1",
+    "jsdom": "^8.1.0",
+    "mocha": "^2.4.5",
+    "node-sass-json-importer": "^3.1.5",
+    "react-addons-test-utils": "^0.14.7",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {
+    "babel-plugin-import": "^1.6.6",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-1": "^6.1.18",
+    "cache-loader": "^1.2.2",
+    "dotenv-webpack": "^1.5.5",
+    "lodash": "^4.17.5",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0"
+  }
+}

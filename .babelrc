@@ -1,0 +1,50 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "node": "current"
+        },
+        "modules": false
+      }
+    ],
+    "react",
+    "stage-2"
+  ],
+  "env": {
+    "storyBook": {},
+    "test": {
+      "presets": [
+        [
+          "env",{"targets": {"node": "current"}}
+        ]
+      ]
+    },
+    "node": {
+      "presets": [
+        [
+          "env",{"targets": {"node": "current"}}
+        ]
+      ],
+      "ignore": [
+        "*.scss"
+      ],
+      "plugins": [
+        ["inline-json-import", {}],
+        [ "remove-style" ]
+      ]
+    }
+  },
+  "plugins": [
+    "transform-object-rest-spread",
+    "transform-async-to-generator",
+    ["import",
+      {
+        "libraryName": "material-ui-next",
+        "libraryDirectory": "./",
+        "camel2DashComponentName": false
+      }
+    ]
+  ]
+}
